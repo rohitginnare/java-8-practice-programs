@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.stream.Collectors;
+class StreamsExampleCount
+{
+	public static void main(String args[])
+	{
+	ArrayList<Integer> l=new ArrayList<>();
+	l.add(5);
+	l.add(10);
+	l.add(65);
+	l.add(20);
+	l.add(55);
+	l.add(13);
+	
+	long l2= l.stream().filter(i->i<35).count();
+	
+	System.out.println("number OF FAILED STUDENTS are : "+l2);
+	}
+}
